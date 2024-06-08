@@ -1,1 +1,108 @@
-c
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Divs</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        .styled-div {
+            border-top: 5px solid rgb(0, 0, 0);
+            border-right: 5px solid rgb(0, 0, 0);
+            background-color:yellow;
+            width: 120px;
+            height: 70px;
+            /* margin-bottom: 10px; Space between divs */
+        }
+
+        .container {
+            display: flex;
+        }
+        .styled-div2 {
+            border-top: 5px solid rgb(0, 0, 0);
+            /* border-right: 5px solid rgb(0, 0, 0); */
+            background-color: yellow;
+            width: 120px;
+            height: 70px;
+            position: relative;
+            left: 360px;
+        }
+
+        
+
+        .container3 {
+            display: flex;
+            align-items: flex-end;
+        }
+        .styled-div3 {
+            border-top: 5px solid #000000;
+            border-left: 5px solid black;
+            background-color:yellow;
+            width: 120px;
+            height: 70px;
+            /* margin-right: 10px; Space between divs */
+        }
+
+
+        .container4 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image-div {
+            border:10px solid blue;
+            background-color: lightgrey;
+            width: 200px;
+            height: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -100px;
+            margin-bottom: 200px;
+            /* margin-right: 10px; Space between divs */
+        }
+        .image-div:last-child {
+            margin-right: 0; /* Remove margin from the last div */
+        }
+        .image-div img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="styled-div"></div>
+    <div class="styled-div" style="position: relative; left: 120px;"></div>
+    <div class="styled-div" style="position: relative; left: 240px;"></div>
+    <div class="container">
+    <div class="styled-div2"></div>
+    <div class="styled-div2"></div>
+    <div class="styled-div2"></div>
+    <div class="styled-div2"></div>
+    
+    </div>
+    <div class="container3">
+    <div class="styled-div3" style="position: relative; left: 840px; bottom: 145px;"></div>
+    <div class="styled-div3" style="position: relative; left: 840px; bottom: 215px;"></div>
+    <div class="styled-div3" style="position: relative; left: 840px; bottom: 285px;"></div>
+    </div>
+
+    <div class="container4">
+        <div class="image-div">
+            <img src="https://images.unsplash.com/photo-1567878672699-b423b930a67b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FuYXBhdGl8ZW58MHx8MHx8fDA%3D" alt="Image 1">
+        </div>
+        <div class="image-div">
+            <img src="https://t4.ftcdn.net/jpg/02/86/51/73/360_F_286517396_X0AWrJ0uujHcxDuw331wGzsGyo0fSOpq.jpg" alt="Image 2">
+        </div>
+        <div class="image-div">
+            <img src="https://i.pinimg.com/564x/3e/07/c8/3e07c851342df56a1a9c60eadb6a089f.jpg" alt="Image 3">
+        </div>
+        <div class="image-div">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sVCcumr2bgg0E8CYyCrIGkQ_QM1kDvqSow&s" alt="Image 4">
+        </div>
+    </div>
+</body>
+</html>
